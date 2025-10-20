@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carte Blanche | Cuisine Méditerranéenne</title>
+
+  <!-- Lien vers le CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Icônes Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <img src="image/logo.PNG" alt="Logo Carte Blanche" class="logo" />
+    <ul class="nav-links">
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#apropos">À propos</a></li>
+      <li><a href="#services">Nos Services</a></li>
+      <li><a href="#commander">Commander</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+<!-- IMAGE D'ACCUEIL (bannière principale) -->
+<header class="hero" style="background-image: url('image/1.jpeg');">
+    <div class="hero-content">
+      <h1>Carte Blanche</h1>
+      <p class="slogan">Cuisine Méditerranéenne • Fraîche & Authentique</p>
+      <a href="#commander" class="btn-primary">Commander maintenant</a>
+    </div>
+  </header>
+
+  <!-- ===== MENU ===== -->
+  <section id="menu" class="menu">
+    <h2>Nos Spécialités Méditerranéennes</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="image/PLAT PRINCIPAL.jpeg" alt="Filet de dorade à la provençale" />
+        <h3>pate</h3>
+        <p>pates frais au fromage</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="image/truff.jpeg" alt="Tagliatelles à la truffe" />
+        <h3>Tagliatelles à la truffe</h3>
+        <p>Pâtes fraîches maison à la crème et copeaux de truffe.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="image/citron.jpeg" alt="Mocktail Citron Basilic" />
+        <h3>Mocktail Citron Basilic</h3>
+        <p>Sans alcool, rafraîchissant et plein de saveurs.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="image/SALADE.jpeg" alt="Salade Méditerranéenne" />
+        <h3>Salade Méditerranéenne</h3>
+        <p>Tomates cerises, olives, feta et vinaigrette maison.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="image/cc.jpeg" alt="Risotto au citron" />
+        <h3>Risotto au citron</h3>
+        <p>Crème légère, zeste de citron et parmesan frais.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="image/cocktail.jpeg" alt="Mocktail Fruits Rouges" />
+        <h3>Mocktail Fruits Rouges</h3>
+        <p>Douceur fruitée, parfaite pour accompagner vos repas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== À PROPOS ===== -->
+  <section id="apropos" class="apropos">
+  
+
+    <div class="apropos-content">
+      <div class="apropos-text">
+        <h2>À propos de Carte Blanche</h2>
+        <p>
+          Chez <strong>Carte Blanche</strong>, nous croyons que la cuisine est une histoire de partage, de passion et de soleil.
+          Inspirés par les saveurs du sud de la France et de l’Italie, nous préparons chaque plat avec des ingrédients frais,
+          de saison et sélectionnés avec soin.
+        </p>
+        <p>
+          Notre chef, amoureux de la cuisine méditerranéenne, vous invite à un voyage culinaire entre
+          la Provence, la Toscane et la Côte Amalfitaine — sans quitter marseille !
+        </p>
+        <p>
+          Que ce soit pour un repas à emporter, une livraison ou un dîner sur place, 
+          <em>Carte Blanche</em> vous promet une expérience chaleureuse, moderne et savoureuse.
+        </p>
+      </div>
+      <div class="apropos-image">
+        <img src="image/1.jpeg" alt="Photo du restaurant Carte Blanche" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="services">
+    <h2>Nos Services</h2>
+    <div class="service-grid">
+      <div class="service-item">
+        <img src="image/liv.jpeg" alt="Livraison à domicile" />
+        <h3>🚗 Livraison à Domicile</h3>
+        <p>Profitez de nos plats chez vous, livrés rapidement et avec soin.</p>
+      </div>
+
+      <div class="service-item">
+        <img src="image/salle.jpeg" alt="À emporter" />
+        <h3>🥡 À Emporter</h3>
+        <p>Commandez en ligne et venez récupérer votre repas au restaurant.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMMANDER ===== -->
+  <section id="commander" class="order">
+    <h2>Commandez en Ligne</h2>
+    <p>Choisissez votre mode de commande : livraison ou à emporter.</p>
+
+    <form class="order-form">
+      <input type="text" placeholder="Votre nom" required />
+      <input type="tel" placeholder="Téléphone" required />
+      <input type="email" placeholder="Email" required />
+
+      <label for="service">Type de commande :</label>
+      <select id="service" required>
+        <option value="">-- Sélectionnez --</option>
+        <option value="livraison">Livraison</option>
+        <option value="emporter">À emporter</option>
+      </select>
+
+      <textarea placeholder="Votre commande (plats, quantité...)" required></textarea>
+      <button type="submit" class="btn-primary">Envoyer la commande</button>
+    </form>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact">
+    <h2>Contact & Informations</h2>
+    <div class="contact-info">
+      <p><strong>Adresse :</strong> 25 Rue de la Méditerranée, 75007 marseille</p>
+      <p><strong>Téléphone :</strong> <a href="tel:+33123456789">01 23 45 67 89</a></p>
+      <p><strong>Email :</strong> <a href="mailto:contact@carteblanche.fr">contact@carteblanche.fr</a></p>
+      <p><strong>Horaires :</strong> Lundi - Samedi : 11h30 - 22h00</p>
+    </div>
+
+    <div class="socials">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 Carte Blanche | Cuisine Méditerranéenne | Tous droits réservés</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
